@@ -217,7 +217,7 @@ footer {
 .contact-form form {
     max-width: 600px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-form label {
@@ -326,7 +326,7 @@ footer {
 }
 
 .btn {
-    width: 100%;
+    width: 105%;
     padding: 12px;
     background-color: #007BFF;
     color: #fff;
