@@ -1,21 +1,23 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     color: #000000;
+    transition: all 0.3s ease;
 }
 
 header {
     background-color: #0585a8;
     padding: 60px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centrar el logo */
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header .logo img {
-    height: 40px;
+    height: 60px; /* Incrementar el tamaño del logo */
 }
 
 header nav ul {
@@ -23,6 +25,8 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -30,9 +34,16 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffdd57;
 }
 
 /* Sección principal */
@@ -42,20 +53,27 @@ header nav ul li a {
     align-items: center;
     padding: 50px 20px;
     background-color: #f4f4f4;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .hero-content {
     max-width: 50%;
+    flex: 1;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .hero-content h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-content p {
     font-size: 1.35em;
     margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-content .btn {
@@ -63,13 +81,36 @@ header nav ul li a {
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #0585a8;
+    color: #ffffff;
+}
+
+/* Botón Follow Us */
+.hero-content .follow-btn {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 10px; /* Separación entre botones */
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .follow-btn:hover {
+    background-color: #0585a8;
+    color: #ffffff;
 }
 
 .hero-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    flex: 1;
 }
 
 /* Sección de características */
@@ -81,6 +122,7 @@ header nav ul li a {
 .features h2 {
     font-size: 2em;
     margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .feature-item {
@@ -88,22 +130,32 @@ header nav ul li a {
     width: 30%;
     margin: 0 1.5%;
     vertical-align: top;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .feature-item h3 {
     font-size: 1.5em;
     margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .feature-item p {
     font-size: 1em;
     color: #000000;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Pie de página */
@@ -111,6 +163,42 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 20px;
     margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .feature-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
