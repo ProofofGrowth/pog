@@ -65,15 +65,15 @@ header nav ul li a:hover {
 }
 
 .hero-content h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-content p {
-    font-size: 1.35em;
+    font-size: 1.3em;
     margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Consolas', sans-serif;
 }
 
 .hero-content .btn {
