@@ -115,7 +115,7 @@ header nav ul li a:hover {
 
 /* Sección de características */
 .features {
-    padding: 50px 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -130,14 +130,14 @@ header nav ul li a:hover {
     width: 30%;
     margin: 0 1.5%;
     vertical-align: top;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #0000001a;
     border-radius: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px #00000033;
 }
 
 .feature-item img {
@@ -147,13 +147,13 @@ header nav ul li a:hover {
 }
 
 .feature-item h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 10px 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .feature-item p {
-    font-size: 1em;
+    font-size: 0.85em;
     color: #000000;
     font-family: 'Roboto', sans-serif;
 }
